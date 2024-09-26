@@ -31,9 +31,9 @@ def main():
         if key_lst[pg.K_LEFT]:
             kk_x -= 1
         if key_lst[pg.K_RIGHT]:
-            kk_x += 1
+            kk_x += 2
 
-        kk_rct.move_ip((kk_x, kk_y))
+        kk_rct.move_ip((kk_x-1, kk_y))
 
         screen.blit(bg_img, [bg_x, 0])
         screen.blit(f_bg_img, [bg_x + 1600, 0])
